@@ -14,7 +14,7 @@ pipeline {
             steps {
 
                 git branch: 'main',
-                url: 'url: 'https://github.com/chethan6186/mvn1.git''
+                url: 'https://github.com/chethan6186/mvn1.git'
 
             }
         }
