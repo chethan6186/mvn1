@@ -23,7 +23,7 @@ pipeline {
 
             steps {
 
-                bat 'mvn clean compile'
+                sh 'mvn clean compile'
 
             }
         }
@@ -32,7 +32,7 @@ pipeline {
 
             steps {
 
-                bat 'mvn test'
+                sh 'mvn test'
 
             }
         }
@@ -41,7 +41,7 @@ pipeline {
 
             steps {
 
-                bat 'mvn package'
+                sh 'mvn package'
 
             }
         }
@@ -50,7 +50,7 @@ pipeline {
 
             steps {
 
-                bat 'mvn exec:java -Dexec.mainClass="com.example.app.App"'
+                sh 'mvn exec:java -Dexec.mainClass="com.example.app.App"'
 
             }
         }
